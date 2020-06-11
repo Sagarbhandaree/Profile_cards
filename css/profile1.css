@@ -1,0 +1,96 @@
+.wrapper {
+  padding-top: 150px;
+}
+.img-area {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.img-area img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
+}
+.img-area:hover .overlay {
+  transform: scaleX(1);
+}
+.socials {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.socials i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 16px;
+
+  color: #fff;
+  margin-right: 6px;
+  transform: translateY(40px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.fa-facebook {
+  background: #3d6ad6;
+}
+.fa-twitter {
+  background: #1da1f2;
+}
+.fa-instagram {
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fa-linkedin{
+    background: #0077b5;
+}
+.img-area:hover .socials i {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.img-area:hover .socials .fa-facebook {
+  transition-delay: 0s;
+}
+.img-area:hover .socials .fa-twitter {
+  transition-delay: 0.15s;
+}
+.img-area:hover .socials .fa-instagram {
+  transition-delay: 0.3s;
+}
+.img-area:hover .socials .fa-linedin {
+  transition-delay: 0.45s;
+}
+.content {
+  text-align: center;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+.content h4 {
+  font-weight: 600;
+}
